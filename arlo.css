@@ -1,0 +1,361 @@
+
+:root{
+    --main-color: #e65f78
+}
+
+
+
+
+.rec{
+
+width: 50px;
+height: 50px;
+background-color: black;
+position: fixed;
+top: 150px;
+right: 0;
+z-index: 99999999;
+transition: all 1s;
+}
+.big-rec{
+
+background-color: black;
+height: 300px;
+position: fixed;
+top: 153px;
+left:1165px;
+opacity: 0;
+transition: all .5s;
+visibility: hidden;
+
+}
+.rec:hover{
+right:185px
+
+}
+.rec:hover .big-rec{
+
+    opacity: 1;
+    visibility: visible;
+
+}
+
+
+
+header{
+    background-image: url(./image/arlo04.jpg);
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+position: relative;
+z-index: 0;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+}
+
+.circle{
+width: 200px;
+height: 200px;
+background-image: url(./image/arlo05.jpg);
+background-size: cover;
+position: relative;
+}
+.circle::before{
+    content: "";
+    background-color:rgba(118, 118, 118, 0.3); 
+    position: absolute;
+    width: 220px;
+height: 220px;
+    border-radius: 50%;
+    top: -12px;
+    left: -10px;
+    z-index: -1;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:hover{
+
+color: var(--main-color);
+
+}
+.header-item h1{
+    
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+.header-item h2::after{
+content: "";
+animation-name: typing;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+}
+@keyframes typing{
+    0%{content: "f";}
+    10%{content: "fr";}
+    15%{content: "fre";}
+    20%{content: "freela";}
+    25%{content: "freelanc";}
+    30%{content: "freelancer";}
+    40%{content: "freelance";}
+    45%{content: "freelanc";}
+    50%{content: "freelan";}
+    60%{content: "freela";}
+    70%{content: "freel";}
+    80%{content: "free";}
+    90%{content: "fre";}
+    95%{content: "fr";}
+    100%{content: "";}
+
+    
+
+
+}
+.aboutme-right span::after{
+    content: "";
+    animation-name: type;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes type{
+    0%{content: "f";}
+    10%{content: "fr";}
+    15%{content: "fre";}
+    20%{content: "freela";}
+    25%{content: "freelanc";}
+    30%{content: "freelancer";}
+    40%{content: "freelance";}
+    45%{content: "freelanc";}
+    50%{content: "freelan";}
+    60%{content: "freela";}
+    70%{content: "freel";}
+    80%{content: "free";}
+    90%{content: "fre";}
+    95%{content: "fr";}
+    100%{content: "";}
+
+    
+
+
+}
+span{
+
+    color: var(--main-color);
+}
+.aboutme-content{
+    position: relative;
+    transition: 1s;
+}
+.aboutme-content:hover{
+    transform: translateX(30px);
+}
+.aboutme-content::before{
+
+content:"" ;
+position: absolute;
+width: 100%;
+height: 100%;
+border: 8px solid black;
+top: 28px;
+left: 28px;
+z-index: -1;
+}
+.aboutme i {color: var(--main-color);}
+
+.aboutme-right .row p{
+    position: relative;
+}
+
+
+.aboutme-right .row p::after{
+    content: "";
+    height: 1px;
+    width: 0px;
+    position:absolute ;
+    bottom: 0px;
+    background-color: rgba(32, 32, 32, 0.781);
+    left: auto;
+    right: 0px;
+   
+  
+    transition:  .5s;
+}
+
+.aboutme-right .row p:hover:after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    position:absolute ;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.493);
+    left: 0px;
+    right:auto;
+    
+    }
+.button button{
+
+background-color: var(--main-color);
+
+border: transparent;
+color: white;
+padding: 12px 34px ;
+position: relative;
+overflow: hidden;
+
+}
+.button button::after{
+
+    content:"" ;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.233);
+    left: -227px;
+    top: 11px;
+    transform: rotate(62deg);
+    transition:all ease-in-out .5s;
+
+}
+.button button:hover:after{
+
+    left: -4px;
+    top: -84px;
+    transform: rotate(18deg);
+
+
+} 
+.box{
+
+    box-shadow: 0 0 20px rgb(0 0 0 / 9%);
+
+}
+.box:hover{
+
+    box-shadow: 4px 0 20px rgb(0 0 0 / 23%);
+
+}
+.services a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.services a::before{
+content: "";
+height: 1px;
+width: 100%;
+position:absolute ;
+bottom: 0px;
+background-color: rgba(175, 174, 174, 0.493);
+left: 0px;
+
+}
+.services a::after{
+    content: "";
+    height: 1px;
+    width: 0;
+    position:absolute ;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.493);
+    left: auto;
+    right: 0px;
+    transition:  1s;
+    }
+    .services a:hover:after{
+        content: "";
+        height: 1px;
+        width: 100%;
+        position:absolute ;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.493);
+        left: 0px;
+        right:auto;
+        
+        }
+
+
+.nav-pills .nav-link:hover{
+
+    color: var(--main-color) !important;
+}
+.nav-pills .nav-link{
+    background-color: transparent !important;
+}
+
+.tab-pane .content{
+
+
+overflow: hidden;
+
+
+}
+.sora{
+transition: all 1s;
+
+}
+
+.tab-pane .content:hover .sora{
+
+transform: scale(1.1)
+
+}
+
+
+.k{
+max-height: 222px;
+
+
+
+}
+
+
+
+
+
+
+
+.counter{
+    background-image: url(./image/ravenna-1920x1080.png);
+    z-index: 400;
+}
+
+
+
+
+.card-body{
+
+    min-height: 182px;
+}
+.sora{
+
+
+overflow: hidden;
+}
+
+.card-img-top{
+    transition: all ease-in-out .5s;
+}
+
+
+
+.sora:hover  .card-img-top {
+
+transform: rotate(2deg)   scale(1.1) ;
+
+
+}
+.contact-title p{
+    width:40%
+}
+.contact-button{
+
+
+background-color: var(--main-color);
+
+color: white;
+
+}
